@@ -65,7 +65,7 @@ class TrackerHTTP:
             if response.status_code != 200 or (failure_reason := decoded_response.get(b"failure reason")):
                 logger.debug(f"Announce request failed: {decoded_response}")
                 raise TrackerError(f"Announce request failed: {failure_reason}")
-            elif (warning_message := decoded_response.get(b"warning message"):
+            elif (warning_message := decoded_response.get(b"warning message")):
                 logger.warning(warning_message)
             
             self.interval = decoded_response["interval"]
