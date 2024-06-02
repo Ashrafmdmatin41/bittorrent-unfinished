@@ -2,7 +2,7 @@ from typing import List, Union
 import logging
 
 from .torrent import Torrent
-from .trackers import Tracker
+from .trackers import TrackerManager
 
 logger = logging.getLogger(__name__)
 
