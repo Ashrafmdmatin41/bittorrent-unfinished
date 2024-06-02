@@ -1,4 +1,4 @@
-from typing import Any, List, Dict, Union
+from typing import Any, List, Dict, Optional, Tuple, Union
 
 from ..torrent import Torrent
 from ..utils import parse_url
