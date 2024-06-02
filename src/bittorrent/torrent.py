@@ -3,7 +3,7 @@ from dataclasses import dataclass, field
 
 import bencode
 
-from .util import generate_info_hash, generate_peer_id
+from .utils import generate_info_hash, generate_peer_id
 
 @dataclass
 class Torrent:
